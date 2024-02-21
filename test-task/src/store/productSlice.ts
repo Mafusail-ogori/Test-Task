@@ -29,11 +29,15 @@ const productSlice = createSlice({
     addProduct(state, action: PayloadAction<{ product: Product }>) {
       const newProduct = action.payload.product;
       state.products = [...state.products, newProduct];
+      const data = JSON.stringify(state.products);
+      localStorage.setItem("products", data);
     },
     removeProduct(state, action: PayloadAction<{ product: Product }>) {
       state.products = state.products.filter(
         (product) => product.id !== action.payload.product.id
       );
+      const data = JSON.stringify(state.products);
+      localStorage.setItem("products", data);
     },
     addComment(
       state,
@@ -47,6 +51,8 @@ const productSlice = createSlice({
         ...foundProduct.comments,
         action.payload.comment,
       ];
+      const data = JSON.stringify(state.products);
+      localStorage.setItem("products", data);
     },
     removeComment(
       state,
@@ -59,9 +65,13 @@ const productSlice = createSlice({
       foundProduct.comments = foundProduct.comments.filter(
         (comment) => comment.id !== action.payload.comment.id
       );
+      const data = JSON.stringify(state.products);
+      localStorage.setItem("products", data);
     },
     setOpenedProduct(state, action: PayloadAction<{ product: Product }>) {
       state.openedProduct = action.payload.product;
+      const data = JSON.stringify(state.openedProduct);
+      localStorage.setItem("openedProduct", data);
     },
   },
 });
