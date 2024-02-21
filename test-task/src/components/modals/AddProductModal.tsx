@@ -48,7 +48,7 @@ export const AddProductModal: React.FC<{ onClick?: () => void }> = ({
 
   const formSubmitClickHandler = (event: FormEvent<HTMLFormElement>) => {
     const addedProduct: Product = {
-      id: height,
+      id: new Date().toISOString(),
       name: name,
       count: count,
       imageUrl: imageUrl,

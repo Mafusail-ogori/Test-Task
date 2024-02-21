@@ -10,7 +10,7 @@ const initialState: {
   products: [],
   success: true,
   openedProduct: {
-    id: 0,
+    id: "",
     name: "",
     count: 0,
     size: {
@@ -72,6 +72,12 @@ const productSlice = createSlice({
       state.openedProduct = action.payload.product;
       const data = JSON.stringify(state.openedProduct);
       localStorage.setItem("openedProduct", data);
+    },
+    getInfoFromStorage(state) {
+      state.products = JSON.parse(localStorage.getItem("products") ?? "[]");
+      state.openedProduct = JSON.parse(
+        localStorage.getItem("openedProduct") ?? "{}"
+      );
     },
   },
 });

@@ -4,6 +4,7 @@ import { Provider } from "react-redux";
 import store from "./store";
 import { ProductSection } from "./components/product/ProductSection";
 import { ProductDetails } from "./components/product-details/ProductDetails";
+import { useEffect } from "react";
 
 const router = createBrowserRouter([
   {
