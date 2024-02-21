@@ -1,0 +1,13 @@
+.product-image-container {
+  border: none;
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+}

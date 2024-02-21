@@ -1,0 +1,19 @@
+.light-card-container,
+.dark-card-container {
+  padding: 15px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+}
+
+.light-card-container {
+  background-color: var(--secondary-block-background-color);
+  color: var(--secondary-text-color);
+}
+
+.dark-card-container {
+  background-color: var(--primary-block-background-color);
+  color: var(--primary-text-color);
+}

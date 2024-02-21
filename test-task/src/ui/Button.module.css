@@ -1,0 +1,32 @@
+.light-button,
+.dark-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 300ms;
+  border: none;
+  font-size: var(--text-size);
+}
+
+.light-button {
+  color: var(--secondary-text-color);
+  background-color: var(--secondary-button-color);
+}
+
+.dark-button {
+  color: var(--primary-text-color);
+  background-color: var(--primary-button-color);
+}
+
+.light-button:hover {
+  color: var(--primary-text-color);
+  background-color: var(--primary-button-color);
+}
+
+.dark-button:hover {
+  color: var(--secondary-text-color);
+  background-color: var(--secondary-button-color);
+}

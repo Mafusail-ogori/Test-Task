@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+
+:root {
+  --background-color: #064841;
+  --primary-block-background-color: #00775e;
+  --secondary-block-background-color: #e5ff8d;
+  --primary-text-color: #feffff;
+  --secondary-text-color: #013a35;
+  --primary-button-color: #00a187;
+  --secondary-button-color: #d4f05e;
+  --header-size: 25px;
+  --subheader-size: 20px;
+  --text-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: "Fredoka", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+  box-sizing: border-box;
+}
+
+button,
+label {
+  font-family: "Fredoka", sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-button-color);
+  border-radius: 5px;
+  transition: 0.2s;
+}

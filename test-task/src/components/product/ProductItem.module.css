@@ -1,0 +1,32 @@
+.product-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.product-item a {
+  text-decoration: none;
+  color: var(--secondary-text-color);
+}
+
+.product-item-info {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product-item > h2 {
+  padding: 0;
+  margin: 0;
+}

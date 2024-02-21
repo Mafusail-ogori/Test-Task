@@ -1,0 +1,45 @@
+.light-input-container,
+.dark-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+.light-input-container > label {
+  color: var(--primary-text-color);
+}
+
+.dark-input-container > label {
+  color: var(--secondary-text-color);
+}
+
+.light-input,
+.dark-input {
+  display: flex;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.light-input:focus,
+.dark-input:focus {
+  outline: none;
+}
+
+.light-input {
+  background-color: var(--secondary-button-color);
+  color: var(--secondary-text-color);
+}
+
+.dark-input {
+  background-color: var(--primary-button-color);
+  color: var(--primary-text-color);
+}
